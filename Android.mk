@@ -8,7 +8,8 @@ ifneq ($(TARGET_SIMULATOR),true)
 LOCAL_PATH := $(my-dir)
 include $(CLEAR_VARS)
 
-ifeq ($(ARCH_ARM_HAVE_NEON),true) LOCAL_CFLAGS += -D__ARM_HAVE_NEON
+ifeq ($(ARCH_ARM_HAVE_NEON),true) 
+	LOCAL_CFLAGS += -D__ARM_HAVE_NEON
 endif
 
 # From autoconf-generated Makefile
